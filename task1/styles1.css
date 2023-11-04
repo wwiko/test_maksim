@@ -6,8 +6,17 @@ button {
   padding: 5px 10px;
 }
 
-button::after {
-  content: " ";
+button:hover {
+  background: #409eff;
+  transition: 0.5;
+}
+
+button:focus {
+  outline-color: transparent;
+  outline-style: solid;
+}
+
+span {
   background: #f56c6c;
   position: absolute;
   display: flex;
@@ -18,18 +27,8 @@ button::after {
   right: -5px;
 }
 
-button:hover {
-  background: #409eff;
-  transition: 0.5;
-}
-
 button:focus::after {
   content: " Focus";
-}
-
-button:focus {
-  outline-color: transparent;
-  outline-style: solid;
 }
 
 button:active::after {
