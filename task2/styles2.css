@@ -1,0 +1,40 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("background-1.png");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 10px;
+  font-size: 18px;
+}
+
+p:nth-of-type(odd) {
+  color: green;
+}
+
+p:nth-of-type(even) {
+  color: blue;
+}
+
+p:first-child {
+  color: red;
+}
+
+p:last-child {
+  color: violet;
+}
+
+p:first-child,
+p:last-child {
+  text-decoration: underline;
+}
+
+button + p {
+  text-decoration: line-through;
+}

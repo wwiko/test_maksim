@@ -1,0 +1,44 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  cursor: pointer;
+  /* padding: 30px; */
+  overflow-y: auto;
+}
+
+.modal_window {
+  position: relative;
+  width: 300px;
+  max-width: 600px;
+  background: azure;
+  margin: auto;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: default;
+}
+
+.modal_title {
+  margin: 0px;
+}
+
+.modal_close1 {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  position: absolute;
+  top: 17.5px;
+  right: 10px;
+  color: gray;
+}
+
+.modal_close1:hover {
+  color: red;
+}
+
+.modal_close2 {
+  width: 100%;
+}

@@ -1,0 +1,37 @@
+button {
+  position: relative;
+  color: #a0d0ff;
+  background: #ecf5ff;
+  border: 1px solid #a0d0ff;
+  padding: 5px 10px;
+}
+
+button::after {
+  content: " ";
+  background: #f56c6c;
+  position: absolute;
+  display: flex;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  top: -5px;
+  right: -5px;
+}
+
+button:hover {
+  background: #409eff;
+  transition: 0.5;
+}
+
+button:focus::after {
+  content: " Focus";
+}
+
+button:focus {
+  outline-color: transparent;
+  outline-style: solid;
+}
+
+button:active::after {
+  content: " Active";
+}
